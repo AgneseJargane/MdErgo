@@ -1,0 +1,762 @@
+2020-11-22 14:46:53,464 INFO org.springframework.boot.StartupInfoLogger [main] Starting MdErgoApplication on agnese-PC with PID 6652 (C:\Users\agnese\MDErgo\target\classes started by agnese in C:\Users\agnese\MDErgo)
+2020-11-22 14:46:53,825 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-11-22 14:46:53,831 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-11-22 14:46:58,221 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 14:46:58,569 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 300ms. Found 1 JPA repository interfaces.
+2020-11-22 14:47:00,746 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-11-22 14:47:00,798 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-22 14:47:00,801 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-11-22 14:47:00,802 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-11-22 14:47:01,391 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-11-22 14:47:01,392 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 7434 ms
+2020-11-22 14:47:02,002 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-11-22 14:47:02,663 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-11-22 14:47:04,904 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2020-11-22 14:47:08,228 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_01_alter_person.xml
+2020-11-22 14:47:09,939 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_02_alter_person.xml
+2020-11-22 14:47:11,118 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_03_insert_person.xml
+2020-11-22 14:47:12,427 INFO liquibase.logging.core.JavaLogger [main] Reading from public.databasechangelog
+2020-11-22 14:47:12,588 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2020-11-22 14:47:13,093 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:47:13,293 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 14:47:15,935 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-11-22 14:47:16,848 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 14:47:17,040 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 14:47:17,619 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-11-22 14:47:18,084 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-11-22 14:47:18,151 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 14:47:18,158 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2020-11-22 14:47:19,936 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 14:47:19,961 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 14:47:20,898 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2020-11-22 14:47:20,931 INFO org.springframework.boot.StartupInfoLogger [main] Started MdErgoApplication in 29.561 seconds (JVM running for 38.124)
+2020-11-22 14:48:16,400 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 14:48:16,402 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2020-11-22 14:48:16,427 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 24 ms
+2020-11-22 14:48:17,076 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] ==>  Preparing: SELECT p.id, p.personal_id AS personalId, p.first_name AS firstName, p.last_name AS lastName, p.gender, p.birth_date AS birthDate FROM person p WHERE p.id = ? AND p.personal_id = ? 
+2020-11-22 14:48:17,116 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] ==> Parameters: 2(Long), '051180-00000'(String)
+2020-11-22 14:48:17,148 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] <==      Total: 0
+2020-11-22 14:50:32,096 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 14:50:32,109 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:50:32,113 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-11-22 14:50:32,144 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-11-22 14:50:49,292 INFO org.springframework.boot.StartupInfoLogger [main] Starting MdErgoApplication on agnese-PC with PID 2316 (C:\Users\agnese\MDErgo\target\classes started by agnese in C:\Users\agnese\MDErgo)
+2020-11-22 14:50:49,299 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-11-22 14:50:49,299 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-11-22 14:50:50,869 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 14:50:50,973 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 86ms. Found 1 JPA repository interfaces.
+2020-11-22 14:50:54,088 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-11-22 14:50:54,141 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-22 14:50:54,146 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-11-22 14:50:54,149 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-11-22 14:50:54,672 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-11-22 14:50:54,673 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5214 ms
+2020-11-22 14:50:55,308 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-11-22 14:50:55,757 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-11-22 14:50:57,871 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2020-11-22 14:51:01,023 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_01_alter_person.xml
+2020-11-22 14:51:03,268 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_02_alter_person.xml
+2020-11-22 14:51:04,790 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_03_insert_person.xml
+2020-11-22 14:51:06,499 INFO liquibase.logging.core.JavaLogger [main] Reading from public.databasechangelog
+2020-11-22 14:51:06,700 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2020-11-22 14:51:07,273 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:51:09,556 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 14:51:09,904 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-11-22 14:51:10,512 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 14:51:10,676 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 14:51:11,083 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-11-22 14:51:11,419 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-11-22 14:51:11,479 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 14:51:11,484 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2020-11-22 14:51:13,108 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 14:51:13,137 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 14:51:13,860 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2020-11-22 14:51:13,910 INFO org.springframework.boot.StartupInfoLogger [main] Started MdErgoApplication in 26.135 seconds (JVM running for 28.519)
+2020-11-22 14:51:21,782 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 14:51:21,783 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-3] Initializing Servlet 'dispatcherServlet'
+2020-11-22 14:51:21,821 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-3] Completed initialization in 37 ms
+2020-11-22 14:51:22,266 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] ==>  Preparing: SELECT p.id, p.personal_id AS personalId, p.first_name AS firstName, p.last_name AS lastName, p.gender, p.birth_date AS birthDate FROM person p WHERE AND 
+2020-11-22 14:51:22,297 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] ==> Parameters: 
+2020-11-22 14:51:22,684 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AND"
+  Position: 174
+### The error may exist in MdErgo/person/PersonMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   p.id,   p.personal_id AS personalId,   p.first_name AS firstName,   p.last_name AS lastName,   p.gender,   p.birth_date AS birthDate    FROM person p    WHERE      AND
+### Cause: org.postgresql.util.PSQLException: ERROR: syntax error at or near "AND"
+  Position: 174
+; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: ERROR: syntax error at or near "AND"
+  Position: 174] with root cause
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "AND"
+  Position: 174
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2267)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:312)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:153)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:142)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy98.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy72.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy74.getPersonInfo(Unknown Source)
+	at MdErgo.person.PersonService.getPersonInfo(PersonService.java:19)
+	at MdErgo.person.PersonController.getPersonInfo(PersonController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-22 14:52:05,755 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 14:52:05,761 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:52:05,762 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-11-22 14:52:05,772 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-11-22 14:52:25,108 INFO org.springframework.boot.StartupInfoLogger [main] Starting MdErgoApplication on agnese-PC with PID 7288 (C:\Users\agnese\MDErgo\target\classes started by agnese in C:\Users\agnese\MDErgo)
+2020-11-22 14:52:25,119 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-11-22 14:52:25,120 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-11-22 14:52:26,756 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 14:52:27,052 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 256ms. Found 1 JPA repository interfaces.
+2020-11-22 14:52:29,549 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-11-22 14:52:29,583 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-22 14:52:29,586 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-11-22 14:52:29,588 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-11-22 14:52:30,089 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-11-22 14:52:30,091 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4824 ms
+2020-11-22 14:52:30,583 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-11-22 14:52:31,221 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-11-22 14:52:33,339 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2020-11-22 14:52:36,528 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_01_alter_person.xml
+2020-11-22 14:52:38,651 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_02_alter_person.xml
+2020-11-22 14:52:40,143 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_03_insert_person.xml
+2020-11-22 14:52:41,593 INFO liquibase.logging.core.JavaLogger [main] Reading from public.databasechangelog
+2020-11-22 14:52:41,729 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2020-11-22 14:52:42,105 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:52:42,282 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 14:52:44,689 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-11-22 14:52:45,387 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 14:52:45,460 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 14:52:45,937 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-11-22 14:52:46,348 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-11-22 14:52:46,420 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 14:52:46,430 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2020-11-22 14:52:47,893 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 14:52:47,913 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 14:52:48,377 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2020-11-22 14:52:48,392 INFO org.springframework.boot.StartupInfoLogger [main] Started MdErgoApplication in 24.658 seconds (JVM running for 26.977)
+2020-11-22 14:52:52,865 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 14:52:52,866 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-11-22 14:52:52,896 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 29 ms
+2020-11-22 14:52:53,105 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] ==>  Preparing: SELECT p.id, p.personal_id AS personalId, p.first_name AS firstName, p.last_name AS lastName, p.gender, p.birth_date AS birthDate FROM person p WHERE p.id = 2 AND p.personal_id ='051180-00000' 
+2020-11-22 14:52:53,139 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] ==> Parameters: 
+2020-11-22 14:52:53,166 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==    Columns: id, personalid, firstname, lastname, gender, birthdate
+2020-11-22 14:52:53,167 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==        Row: 2, 051180-00000, Kārlis, Sloka, MALE, 1980-11-05 00:00:00
+2020-11-22 14:52:53,191 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==      Total: 1
+2020-11-22 14:54:38,361 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 14:54:38,371 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:54:38,374 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-11-22 14:54:38,391 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-11-22 14:54:58,476 INFO org.springframework.boot.StartupInfoLogger [main] Starting MdErgoApplication on agnese-PC with PID 8772 (C:\Users\agnese\MDErgo\target\classes started by agnese in C:\Users\agnese\MDErgo)
+2020-11-22 14:54:58,485 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-11-22 14:54:58,486 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-11-22 14:54:59,966 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 14:55:00,072 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 90ms. Found 1 JPA repository interfaces.
+2020-11-22 14:55:01,454 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-11-22 14:55:01,497 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-22 14:55:01,502 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-11-22 14:55:01,505 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-11-22 14:55:02,128 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-11-22 14:55:02,130 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3535 ms
+2020-11-22 14:55:02,773 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-11-22 14:55:03,442 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-11-22 14:55:05,845 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2020-11-22 14:55:08,895 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_01_alter_person.xml
+2020-11-22 14:55:10,707 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_02_alter_person.xml
+2020-11-22 14:55:12,008 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_03_insert_person.xml
+2020-11-22 14:55:13,612 INFO liquibase.logging.core.JavaLogger [main] Reading from public.databasechangelog
+2020-11-22 14:55:13,808 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2020-11-22 14:55:14,326 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:55:14,560 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 14:55:16,596 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-11-22 14:55:17,192 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 14:55:17,321 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 14:55:17,784 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-11-22 14:55:18,201 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-11-22 14:55:18,256 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 14:55:18,261 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2020-11-22 14:55:19,609 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 14:55:19,629 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 14:55:20,005 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2020-11-22 14:55:20,017 INFO org.springframework.boot.StartupInfoLogger [main] Started MdErgoApplication in 23.097 seconds (JVM running for 27.367)
+2020-11-22 14:55:26,176 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-7] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 14:55:26,177 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-7] Initializing Servlet 'dispatcherServlet'
+2020-11-22 14:55:26,233 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-7] Completed initialization in 46 ms
+2020-11-22 14:55:27,009 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-7] ==>  Preparing: SELECT p.id, p.personal_id AS personalId, p.first_name AS firstName, p.last_name AS lastName, p.gender, p.birth_date AS birthDate FROM person p WHERE p.id = ? AND p.personal_id = ? 
+2020-11-22 14:55:27,103 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-7] ==> Parameters: 2(Long), '051180-00000'(String)
+2020-11-22 14:55:27,145 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-7] <==      Total: 0
+2020-11-22 14:56:29,971 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 14:56:29,985 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:56:29,989 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-11-22 14:56:30,016 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-11-22 14:56:47,319 INFO org.springframework.boot.StartupInfoLogger [main] Starting MdErgoApplication on agnese-PC with PID 10664 (C:\Users\agnese\MDErgo\target\classes started by agnese in C:\Users\agnese\MDErgo)
+2020-11-22 14:56:47,328 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-11-22 14:56:47,329 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-11-22 14:56:49,166 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 14:56:49,302 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 118ms. Found 1 JPA repository interfaces.
+2020-11-22 14:56:50,683 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-11-22 14:56:50,719 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-22 14:56:50,724 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-11-22 14:56:50,727 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-11-22 14:56:51,286 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-11-22 14:56:51,290 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3842 ms
+2020-11-22 14:56:51,851 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-11-22 14:56:52,454 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-11-22 14:56:54,626 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2020-11-22 14:56:57,948 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_01_alter_person.xml
+2020-11-22 14:57:00,031 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_02_alter_person.xml
+2020-11-22 14:57:01,693 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_03_insert_person.xml
+2020-11-22 14:57:03,573 INFO liquibase.logging.core.JavaLogger [main] Reading from public.databasechangelog
+2020-11-22 14:57:03,842 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2020-11-22 14:57:04,513 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:57:07,110 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 14:57:07,528 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-11-22 14:57:08,039 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 14:57:08,153 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 14:57:08,504 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-11-22 14:57:08,816 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-11-22 14:57:08,876 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 14:57:08,882 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2020-11-22 14:57:10,125 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 14:57:10,144 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 14:57:10,750 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2020-11-22 14:57:10,763 INFO org.springframework.boot.StartupInfoLogger [main] Started MdErgoApplication in 24.832 seconds (JVM running for 27.526)
+2020-11-22 14:57:17,758 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 14:57:17,760 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2020-11-22 14:57:17,807 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 45 ms
+2020-11-22 14:57:18,049 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'personalId' is not present]
+2020-11-22 14:58:38,955 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 14:58:38,963 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:58:38,964 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-11-22 14:58:39,039 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-11-22 14:58:56,845 INFO org.springframework.boot.StartupInfoLogger [main] Starting MdErgoApplication on agnese-PC with PID 10812 (C:\Users\agnese\MDErgo\target\classes started by agnese in C:\Users\agnese\MDErgo)
+2020-11-22 14:58:56,859 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-11-22 14:58:56,860 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-11-22 14:59:00,318 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 14:59:00,647 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 297ms. Found 1 JPA repository interfaces.
+2020-11-22 14:59:02,961 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-11-22 14:59:03,000 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-22 14:59:03,002 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-11-22 14:59:03,003 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-11-22 14:59:03,550 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-11-22 14:59:03,551 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 6473 ms
+2020-11-22 14:59:04,395 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-11-22 14:59:04,795 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-11-22 14:59:06,122 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2020-11-22 14:59:09,106 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_01_alter_person.xml
+2020-11-22 14:59:10,713 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_02_alter_person.xml
+2020-11-22 14:59:12,107 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_03_insert_person.xml
+2020-11-22 14:59:12,864 INFO liquibase.logging.core.JavaLogger [main] Reading from public.databasechangelog
+2020-11-22 14:59:12,995 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2020-11-22 14:59:13,355 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:59:13,532 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 14:59:13,727 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-11-22 14:59:15,193 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 14:59:15,342 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 14:59:15,761 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-11-22 14:59:16,161 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-11-22 14:59:16,233 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 14:59:16,239 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2020-11-22 14:59:18,281 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 14:59:18,305 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 14:59:18,916 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2020-11-22 14:59:18,940 INFO org.springframework.boot.StartupInfoLogger [main] Started MdErgoApplication in 24.313 seconds (JVM running for 27.687)
+2020-11-22 14:59:28,041 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 14:59:28,048 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:59:28,083 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-11-22 14:59:28,183 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-11-22 14:59:46,103 INFO org.springframework.boot.StartupInfoLogger [main] Starting MdErgoApplication on agnese-PC with PID 10828 (C:\Users\agnese\MDErgo\target\classes started by agnese in C:\Users\agnese\MDErgo)
+2020-11-22 14:59:46,115 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-11-22 14:59:46,116 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-11-22 14:59:48,225 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 14:59:48,396 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 142ms. Found 1 JPA repository interfaces.
+2020-11-22 14:59:50,055 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-11-22 14:59:50,089 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-22 14:59:50,094 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-11-22 14:59:50,095 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-11-22 14:59:50,505 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-11-22 14:59:50,506 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4234 ms
+2020-11-22 14:59:50,888 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-11-22 14:59:51,298 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-11-22 14:59:52,339 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2020-11-22 14:59:53,932 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_01_alter_person.xml
+2020-11-22 14:59:54,773 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_02_alter_person.xml
+2020-11-22 14:59:56,567 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_03_insert_person.xml
+2020-11-22 14:59:58,530 INFO liquibase.logging.core.JavaLogger [main] Reading from public.databasechangelog
+2020-11-22 14:59:58,653 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2020-11-22 14:59:58,982 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:59:59,182 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 14:59:59,398 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-11-22 15:00:01,140 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 15:00:01,238 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 15:00:01,625 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-11-22 15:00:01,964 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-11-22 15:00:02,026 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 15:00:02,033 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2020-11-22 15:00:03,247 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 15:00:03,270 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 15:00:03,694 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2020-11-22 15:00:03,716 INFO org.springframework.boot.StartupInfoLogger [main] Started MdErgoApplication in 19.658 seconds (JVM running for 22.809)
+2020-11-22 15:00:12,112 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-10] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 15:00:12,114 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Initializing Servlet 'dispatcherServlet'
+2020-11-22 15:00:12,175 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed initialization in 59 ms
+2020-11-22 15:00:12,472 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-10] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'id' is not present]
+2020-11-22 15:00:44,344 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 15:00:44,352 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 15:00:44,354 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-11-22 15:00:44,367 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-11-22 15:00:59,966 INFO org.springframework.boot.StartupInfoLogger [main] Starting MdErgoApplication on agnese-PC with PID 120 (C:\Users\agnese\MDErgo\target\classes started by agnese in C:\Users\agnese\MDErgo)
+2020-11-22 15:00:59,976 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-11-22 15:00:59,977 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-11-22 15:01:02,468 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 15:01:02,609 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 120ms. Found 1 JPA repository interfaces.
+2020-11-22 15:01:05,371 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-11-22 15:01:05,452 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-22 15:01:05,459 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-11-22 15:01:05,464 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-11-22 15:01:06,303 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-11-22 15:01:06,306 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 6182 ms
+2020-11-22 15:01:06,917 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-11-22 15:01:07,361 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-11-22 15:01:08,754 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2020-11-22 15:01:10,320 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_01_alter_person.xml
+2020-11-22 15:01:11,298 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_02_alter_person.xml
+2020-11-22 15:01:12,031 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_03_insert_person.xml
+2020-11-22 15:01:12,843 INFO liquibase.logging.core.JavaLogger [main] Reading from public.databasechangelog
+2020-11-22 15:01:12,953 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2020-11-22 15:01:13,192 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 15:01:13,277 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 15:01:13,427 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-11-22 15:01:13,770 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 15:01:14,634 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 15:01:15,040 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-11-22 15:01:15,397 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-11-22 15:01:15,451 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 15:01:15,464 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2020-11-22 15:01:16,806 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 15:01:16,829 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 15:01:17,266 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2020-11-22 15:01:17,290 INFO org.springframework.boot.StartupInfoLogger [main] Started MdErgoApplication in 19.189 seconds (JVM running for 21.852)
+2020-11-22 15:01:22,969 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-9] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 15:01:22,970 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Initializing Servlet 'dispatcherServlet'
+2020-11-22 15:01:22,991 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Completed initialization in 20 ms
+2020-11-22 15:01:23,157 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-9] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'id' is not present]
+2020-11-22 15:01:32,645 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] ==>  Preparing: SELECT p.id, p.personal_id AS personalId, p.first_name AS firstName, p.last_name AS lastName, p.gender, p.birth_date AS birthDate FROM person p WHERE p.id = ? AND p.personal_id = ? 
+2020-11-22 15:01:32,702 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] ==> Parameters: 2(Long), 051180-00000(String)
+2020-11-22 15:01:32,731 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] <==    Columns: id, personalid, firstname, lastname, gender, birthdate
+2020-11-22 15:01:32,732 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] <==        Row: 2, 051180-00000, Kārlis, Sloka, MALE, 1980-11-05 00:00:00
+2020-11-22 15:01:32,755 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] <==      Total: 1
+2020-11-22 15:02:30,126 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 15:02:30,139 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 15:02:30,141 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-11-22 15:02:30,158 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-11-22 15:02:43,999 INFO org.springframework.boot.StartupInfoLogger [main] Starting MdErgoApplication on agnese-PC with PID 6680 (C:\Users\agnese\MDErgo\target\classes started by agnese in C:\Users\agnese\MDErgo)
+2020-11-22 15:02:44,009 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-11-22 15:02:44,010 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-11-22 15:02:46,265 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 15:02:46,430 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 141ms. Found 1 JPA repository interfaces.
+2020-11-22 15:02:47,721 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-11-22 15:02:47,737 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-22 15:02:47,738 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-11-22 15:02:47,739 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-11-22 15:02:48,010 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-11-22 15:02:48,011 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3865 ms
+2020-11-22 15:02:48,379 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-11-22 15:02:49,349 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-11-22 15:02:51,840 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2020-11-22 15:02:54,056 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_01_alter_person.xml
+2020-11-22 15:02:54,934 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_02_alter_person.xml
+2020-11-22 15:02:55,559 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_03_insert_person.xml
+2020-11-22 15:02:56,304 INFO liquibase.logging.core.JavaLogger [main] Reading from public.databasechangelog
+2020-11-22 15:02:56,368 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2020-11-22 15:02:56,584 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 15:02:56,669 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 15:02:57,700 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-11-22 15:02:58,100 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 15:02:58,189 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 15:02:58,522 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-11-22 15:02:58,836 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-11-22 15:02:58,894 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 15:02:58,907 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2020-11-22 15:03:00,090 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 15:03:00,107 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 15:03:00,569 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2020-11-22 15:03:00,592 INFO org.springframework.boot.StartupInfoLogger [main] Started MdErgoApplication in 18.273 seconds (JVM running for 20.864)
+2020-11-22 15:03:13,775 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-9] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 15:03:13,776 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Initializing Servlet 'dispatcherServlet'
+2020-11-22 15:03:13,808 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Completed initialization in 31 ms
+2020-11-22 15:03:14,010 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-9] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "2L"]
+2020-11-22 15:03:25,174 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-7] ==>  Preparing: SELECT p.id, p.personal_id AS personalId, p.first_name AS firstName, p.last_name AS lastName, p.gender, p.birth_date AS birthDate FROM person p WHERE p.id = ? AND p.personal_id = ? 
+2020-11-22 15:03:25,222 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-7] ==> Parameters: 2(Long), "051180-00000"(String)
+2020-11-22 15:03:25,275 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-7] <==      Total: 0
+2020-11-22 15:03:41,288 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] ==>  Preparing: SELECT p.id, p.personal_id AS personalId, p.first_name AS firstName, p.last_name AS lastName, p.gender, p.birth_date AS birthDate FROM person p WHERE p.id = ? AND p.personal_id = ? 
+2020-11-22 15:03:41,291 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] ==> Parameters: 2(Long), 051180-00000(String)
+2020-11-22 15:03:41,294 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==    Columns: id, personalid, firstname, lastname, gender, birthdate
+2020-11-22 15:03:41,296 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==        Row: 2, 051180-00000, Kārlis, Sloka, MALE, 1980-11-05 00:00:00
+2020-11-22 15:03:41,323 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==      Total: 1
+2020-11-22 15:41:01,913 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 15:41:01,945 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 15:41:01,949 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-11-22 15:41:01,991 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-11-22 15:41:11,982 INFO org.springframework.boot.StartupInfoLogger [main] Starting MdErgoApplication on agnese-PC with PID 15804 (C:\Users\agnese\MDErgo\target\classes started by agnese in C:\Users\agnese\MDErgo)
+2020-11-22 15:41:11,994 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-11-22 15:41:11,995 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-11-22 15:41:14,075 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 15:41:14,345 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 232ms. Found 1 JPA repository interfaces.
+2020-11-22 15:41:16,720 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-11-22 15:41:16,756 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-22 15:41:16,760 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-11-22 15:41:16,762 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-11-22 15:41:17,281 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-11-22 15:41:17,282 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5107 ms
+2020-11-22 15:41:18,003 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-11-22 15:41:18,550 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-11-22 15:41:20,379 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2020-11-22 15:41:23,583 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_01_alter_person.xml
+2020-11-22 15:41:25,461 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_02_alter_person.xml
+2020-11-22 15:41:26,859 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_03_insert_person.xml
+2020-11-22 15:41:28,368 INFO liquibase.logging.core.JavaLogger [main] Reading from public.databasechangelog
+2020-11-22 15:41:28,575 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 15:41:28,584 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 15:41:28,589 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 15:41:28,592 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 15:41:28,598 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 15:41:28,602 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 15:41:28,606 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 15:41:28,609 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 15:41:28,611 INFO liquibase.logging.core.JavaLogger [main] ChangeSet MdErgo/db/20201121_03_insert_person.xml::20201121_03_insert_person::ajargane ran successfully in 47ms
+2020-11-22 15:41:28,633 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2020-11-22 15:41:30,994 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 15:41:31,260 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 15:41:31,630 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-11-22 15:41:32,239 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 15:41:32,415 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 15:41:32,892 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-11-22 15:41:33,286 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-11-22 15:41:33,363 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 15:41:33,371 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2020-11-22 15:41:34,804 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 15:41:34,825 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 15:41:35,309 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2020-11-22 15:41:35,329 INFO org.springframework.boot.StartupInfoLogger [main] Started MdErgoApplication in 24.974 seconds (JVM running for 27.529)
+2020-11-22 15:53:53,694 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 15:53:53,706 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 15:53:53,708 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-11-22 15:53:53,727 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-11-22 15:54:09,018 INFO org.springframework.boot.StartupInfoLogger [main] Starting MdErgoApplication on agnese-PC with PID 14796 (C:\Users\agnese\MDErgo\target\classes started by agnese in C:\Users\agnese\MDErgo)
+2020-11-22 15:54:09,028 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-11-22 15:54:09,029 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-11-22 15:54:11,351 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 15:54:11,453 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 85ms. Found 1 JPA repository interfaces.
+2020-11-22 15:54:12,529 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-11-22 15:54:12,545 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-22 15:54:12,547 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-11-22 15:54:12,548 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-11-22 15:54:12,823 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-11-22 15:54:12,823 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3567 ms
+2020-11-22 15:54:13,104 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-11-22 15:54:13,358 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-11-22 15:54:14,144 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2020-11-22 15:54:15,973 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_01_alter_person.xml
+2020-11-22 15:54:18,054 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_02_alter_person.xml
+2020-11-22 15:54:19,851 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_03_insert_person.xml
+2020-11-22 15:54:21,458 INFO liquibase.logging.core.JavaLogger [main] Reading from public.databasechangelog
+2020-11-22 15:54:22,635 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2020-11-22 15:54:22,925 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 15:54:23,048 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 15:54:23,243 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-11-22 15:54:23,584 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 15:54:23,698 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 15:54:24,009 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-11-22 15:54:24,213 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-11-22 15:54:24,266 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 15:54:24,275 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2020-11-22 15:54:25,671 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 15:54:25,735 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 15:54:26,765 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2020-11-22 15:54:26,794 INFO org.springframework.boot.StartupInfoLogger [main] Started MdErgoApplication in 19.312 seconds (JVM running for 21.495)
+2020-11-22 15:55:45,129 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 15:55:45,137 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 15:55:45,140 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-11-22 15:55:45,152 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-11-22 15:55:59,095 INFO org.springframework.boot.StartupInfoLogger [main] Starting MdErgoApplication on agnese-PC with PID 2204 (C:\Users\agnese\MDErgo\target\classes started by agnese in C:\Users\agnese\MDErgo)
+2020-11-22 15:55:59,107 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-11-22 15:55:59,108 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-11-22 15:56:00,921 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 15:56:01,028 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 89ms. Found 1 JPA repository interfaces.
+2020-11-22 15:56:02,711 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-11-22 15:56:02,763 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-22 15:56:02,768 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-11-22 15:56:02,771 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-11-22 15:56:03,298 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-11-22 15:56:03,299 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4065 ms
+2020-11-22 15:56:03,876 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-11-22 15:56:04,489 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-11-22 15:56:06,600 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2020-11-22 15:56:09,803 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_01_alter_person.xml
+2020-11-22 15:56:11,833 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_02_alter_person.xml
+2020-11-22 15:56:13,226 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_03_insert_person.xml
+2020-11-22 15:56:14,736 INFO liquibase.logging.core.JavaLogger [main] Reading from public.databasechangelog
+2020-11-22 15:56:14,919 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2020-11-22 15:56:15,279 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 15:56:17,569 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 15:56:18,003 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-11-22 15:56:18,769 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 15:56:18,942 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 15:56:19,479 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-11-22 15:56:19,884 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-11-22 15:56:19,957 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 15:56:19,964 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2020-11-22 15:56:21,419 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 15:56:21,442 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 15:56:21,942 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2020-11-22 15:56:21,961 INFO org.springframework.boot.StartupInfoLogger [main] Started MdErgoApplication in 24.478 seconds (JVM running for 26.762)
+2020-11-22 15:56:54,559 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 15:56:54,562 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-11-22 15:56:54,602 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 39 ms
+2020-11-22 15:56:54,842 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.util.Date'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.util.Date] for value '19801105'; nested exception is java.lang.IllegalArgumentException]
+2020-11-22 15:57:03,767 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.util.Date'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.util.Date] for value '1980-11-05'; nested exception is java.lang.IllegalArgumentException]
+2020-11-22 16:18:16,087 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 16:18:16,131 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 16:18:16,134 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-11-22 16:18:16,154 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-11-22 16:39:06,150 INFO org.springframework.boot.StartupInfoLogger [main] Starting MdErgoApplication on agnese-PC with PID 2948 (C:\Users\agnese\MDErgo\target\classes started by agnese in C:\Users\agnese\MDErgo)
+2020-11-22 16:39:06,161 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-11-22 16:39:06,162 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-11-22 16:39:08,374 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 16:39:08,513 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 113ms. Found 1 JPA repository interfaces.
+2020-11-22 16:39:09,593 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-11-22 16:39:09,615 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-22 16:39:09,615 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-11-22 16:39:09,616 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-11-22 16:39:09,776 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-11-22 16:39:09,777 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3499 ms
+2020-11-22 16:39:10,040 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-11-22 16:39:10,263 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-11-22 16:39:11,045 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2020-11-22 16:39:12,225 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_01_alter_person.xml
+2020-11-22 16:39:12,926 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_02_alter_person.xml
+2020-11-22 16:39:13,399 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_03_insert_person.xml
+2020-11-22 16:39:13,887 INFO liquibase.logging.core.JavaLogger [main] Reading from public.databasechangelog
+2020-11-22 16:39:14,643 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2020-11-22 16:39:14,647 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set MdErgo/db/20201121_01_alter_person.xml::20201121_01_alter_person::ajargane:
+     Reason: liquibase.exception.DatabaseException: ERROR: column "personal_id" of relation "person" already exists [Failed SQL: (0) ALTER TABLE public.person ADD personal_id VARCHAR(12) NOT NULL]
+2020-11-22 16:39:14,648 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2020-11-22 16:39:14,658 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2020-11-22 16:39:14,666 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2020-11-22 16:39:14,693 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-22 16:39:14,726 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set MdErgo/db/20201121_01_alter_person.xml::20201121_01_alter_person::ajargane:
+     Reason: liquibase.exception.DatabaseException: ERROR: column "personal_id" of relation "person" already exists [Failed SQL: (0) ALTER TABLE public.person ADD personal_id VARCHAR(12) NOT NULL]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at MdErgo.MdErgoApplication.main(MdErgoApplication.java:12)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set MdErgo/db/20201121_01_alter_person.xml::20201121_01_alter_person::ajargane:
+     Reason: liquibase.exception.DatabaseException: ERROR: column "personal_id" of relation "person" already exists [Failed SQL: (0) ALTER TABLE public.person ADD personal_id VARCHAR(12) NOT NULL]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:112)
+	at liquibase.Liquibase$1.run(Liquibase.java:206)
+	at liquibase.Scope.lambda$child$0(Scope.java:159)
+	at liquibase.Scope.child(Scope.java:170)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:137)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1790)
+	at liquibase.Liquibase.update(Liquibase.java:183)
+	at liquibase.Liquibase.update(Liquibase.java:179)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:322)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:270)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 19 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for change set MdErgo/db/20201121_01_alter_person.xml::20201121_01_alter_person::ajargane:
+     Reason: liquibase.exception.DatabaseException: ERROR: column "personal_id" of relation "person" already exists [Failed SQL: (0) ALTER TABLE public.person ADD personal_id VARCHAR(12) NOT NULL]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:670)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:49)
+	at liquibase.changelog.ChangeLogIterator$2$1.run(ChangeLogIterator.java:99)
+	at liquibase.Scope.lambda$child$0(Scope.java:159)
+	at liquibase.Scope.child(Scope.java:170)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:137)
+	at liquibase.Scope.child(Scope.java:183)
+	at liquibase.Scope.child(Scope.java:187)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:91)
+	at liquibase.Scope.lambda$child$0(Scope.java:159)
+	at liquibase.Scope.child(Scope.java:170)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:137)
+	at liquibase.Scope.child(Scope.java:183)
+	at liquibase.Scope.child(Scope.java:187)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:64)
+	... 31 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ERROR: column "personal_id" of relation "person" already exists [Failed SQL: (0) ALTER TABLE public.person ADD personal_id VARCHAR(12) NOT NULL]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:398)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:82)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:154)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1272)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1254)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:635)
+	... 47 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: column "personal_id" of relation "person" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2267)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:312)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:310)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:296)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:273)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:268)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:394)
+	... 52 common frames omitted
+2020-11-22 16:45:58,921 INFO org.springframework.boot.StartupInfoLogger [main] Starting MdErgoApplication on agnese-PC with PID 6584 (C:\Users\agnese\MDErgo\target\classes started by agnese in C:\Users\agnese\MDErgo)
+2020-11-22 16:45:58,928 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-11-22 16:45:58,931 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-11-22 16:46:01,797 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 16:46:01,944 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 124ms. Found 1 JPA repository interfaces.
+2020-11-22 16:46:03,441 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-11-22 16:46:03,461 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-22 16:46:03,463 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-11-22 16:46:03,464 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-11-22 16:46:03,746 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-11-22 16:46:03,747 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4618 ms
+2020-11-22 16:46:04,061 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-11-22 16:46:04,548 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-11-22 16:46:05,401 INFO liquibase.logging.core.JavaLogger [main] Successfully acquired change log lock
+2020-11-22 16:46:06,948 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_01_init_person.xml
+2020-11-22 16:46:08,037 INFO liquibase.logging.core.JavaLogger [main] Reading resource: MdErgo/db/20201121_02_insert_person.xml
+2020-11-22 16:46:08,936 INFO liquibase.logging.core.JavaLogger [main] Reading from public.databasechangelog
+2020-11-22 16:46:09,114 INFO liquibase.logging.core.JavaLogger [main] Table person created
+2020-11-22 16:46:09,116 INFO liquibase.logging.core.JavaLogger [main] ChangeSet MdErgo/db/20201121_01_init_person.xml::20201121_01_init_person::ajargane ran successfully in 45ms
+2020-11-22 16:46:09,133 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 16:46:09,139 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 16:46:09,142 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 16:46:09,144 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 16:46:09,147 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 16:46:09,149 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 16:46:09,151 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 16:46:09,153 INFO liquibase.logging.core.JavaLogger [main] New row inserted into person
+2020-11-22 16:46:09,154 INFO liquibase.logging.core.JavaLogger [main] ChangeSet MdErgo/db/20201121_02_insert_person.xml::20201121_02_insert_person::ajargane ran successfully in 24ms
+2020-11-22 16:46:09,163 INFO liquibase.logging.core.JavaLogger [main] Successfully released change log lock
+2020-11-22 16:46:09,419 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 16:46:09,530 INFO org.hibernate.jpa.internal.util.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 16:46:09,721 INFO org.hibernate.Version [task-1] HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-11-22 16:46:11,017 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 16:46:11,158 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 16:46:11,573 INFO org.hibernate.dialect.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-11-22 16:46:11,903 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-11-22 16:46:11,963 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-22 16:46:11,968 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Triggering deferred initialization of Spring Data repositories…
+2020-11-22 16:46:13,485 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 16:46:13,507 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 16:46:14,084 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [main] Spring Data repositories initialized!
+2020-11-22 16:46:14,117 INFO org.springframework.boot.StartupInfoLogger [main] Started MdErgoApplication in 16.611 seconds (JVM running for 18.545)
+2020-11-22 16:47:23,637 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 16:47:23,638 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-11-22 16:47:23,655 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 17 ms
+2020-11-22 16:47:23,916 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] ==>  Preparing: SELECT p.id, p.personal_id AS personalId, p.first_name AS firstName, p.last_name AS lastName, p.gender, p.birth_date AS birthDate FROM person p WHERE p.personal_id = ? AND p.birth_date = ? 
+2020-11-22 16:47:23,941 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] ==> Parameters: 051180-00000(String), 05-11-1980(String)
+2020-11-22 16:47:23,960 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==    Columns: id, personalid, firstname, lastname, gender, birthdate
+2020-11-22 16:47:23,961 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==        Row: 2, 051180-00000, Kārlis, Sloka, MALE, 05-11-1980
+2020-11-22 16:47:23,975 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==      Total: 1
+2020-11-22 20:36:52,911 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 20:36:52,985 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 20:36:52,987 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-11-22 20:36:53,006 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.

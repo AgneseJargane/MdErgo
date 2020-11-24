@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="MdErgo.person.PersonMapper">
+	<select id="getPersonInfo" resultType="MdErgo.person.Person">
+		SELECT
+		p.id,
+		p.personal_id AS personalId,
+		p.first_name AS firstName,
+		p.last_name AS lastName,
+		p.gender,
+		p.birth_date AS birthDate
+		 FROM person p
+		 WHERE
+		  <if test="personalId != null"> p.personal_id = #{personalId}</if>
+	  AND <if test="birthDate != null"> p.birth_date = #{birthDate}</if>
+	</select>
+
+</mapper>

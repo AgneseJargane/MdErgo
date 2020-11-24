@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b4a77f08-c5e8-4764-a5b7-38d11c237a7e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/MdErgo-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/MdErgo-client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MdErgo-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/MdErgo-client/package.json" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>org.springframework.boot.liquibase</find>
+      <find>mdErgo</find>
+      <find>mybatis.config-location</find>
+      <find>Long</find>
+      <find>dependencies</find>
+      <find>home</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\Users\agnese\MDErgo\src\main\resources\MdErgo</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/MdErgo-client" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/Person/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Person/PersonRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MdErgoApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/aplication.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/MdErgo/heloo.fxml" />
+        <option value="$PROJECT_DIR$/MdErgo-client/proxy.conf.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/MdErgo/db/test.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/MdErgo/db/test.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.changelog-master.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/liquibase.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/MdErgo/MdErgoApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/MdErgo/mapper/PersonMapper.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/MdErgo/db/20201121_01_alter_person.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/MdErgo/Person/PersonService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MdErgo/enums/Gender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MdErgo/enums/Status.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MdErgo/Person/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/MdErgo/db/20201121_02_insert_person.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/MdErgo/base/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MdErgo/Person/PersonController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/MdErgo/mapper/PersonMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/MdErgo/person/PersonMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/MdErgo/db/20201121_02_alter_person.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/MdErgo/person/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MdErgo/person/PersonController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MdErgo/person/PersonMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/MdErgo/db/20201121_01_alter_person.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/MdErgo/db/20201121_01_init_person.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/MdErgo/db/20201121_03_insert_person.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/MdErgo/person/PersonService.java" />
+        <option value="$PROJECT_DIR$/MdErgo-client/angular.json" />
+        <option value="$PROJECT_DIR$/MdErgo-client/src/shared/sharedd.module.ts" />
+        <option value="$PROJECT_DIR$/MdErgo-client/tsconfig.json" />
+        <option value="$PROJECT_DIR$/MdErgo-client/src/app/app.component.spec.ts" />
+        <option value="$PROJECT_DIR$/MdErgo-client/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/MdErgo-client/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/MdErgo-client/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/MdErgo-client/package.json" />
+        <option value="$PROJECT_DIR$/MdErgo-client/src/shared/shared.module.ts" />
+        <option value="$PROJECT_DIR$/MdErgo-client/.angular-cli.json" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MDErgo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MDErgo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MDErgo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MDErgo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MDErgo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MDErgo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MDErgo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MDErgo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MDErgo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MDErgo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="MdErgo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MDErgo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MDErgo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="MdErgo" type="462c0819:PsiDirectoryNode" />
+              <item name="person" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MDErgo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MDErgo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MDErgo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MDErgo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="MdErgo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MDErgo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MDErgo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="MdErgo" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MDErgo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MDErgo" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MDErgo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MDErgo" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MDErgo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MDErgo" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="MdErgo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606076295795" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/MdErgo-client/node_modules/protractor" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Users\agnese\MDErgo\MdErgo-client\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\agnese\MDErgo\src\main\resources\MdErgo\db" />
+      <recent name="C:\Users\agnese\MDErgo\src\main\java\MdErgo\person" />
+      <recent name="C:\Users\agnese\MDErgo\src\main\resources" />
+      <recent name="C:\Users\agnese\MDErgo\MdErgo-client" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\agnese\MDErgo\MdErgo-client" />
+      <recent name="C:\Users\agnese\MDErgo\src\main\java\MdErgo\person" />
+      <recent name="C:\Users\agnese\MDErgo\src\main\resources\MdErgo\mapper" />
+      <recent name="C:\Users\agnese\MDErgo\src\main\resources" />
+      <recent name="C:\Users\agnese\MDErgo\src\main\resources\MdErgo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.MdErgo-client">
+    <configuration name="AppComponent.should create the app" type="JavaScriptTestRunnerProtractor" temporary="true" nameIsGenerated="true">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/MdErgo-client/node_modules/protractor" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/MdErgo-client/src/app/app.component.spec.ts" />
+      <test-names>
+        <test-name value="AppComponent" />
+        <test-name value="should create the app" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="MdErgoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="MDErgo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="MdErgo.MdErgoApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MdErgo-client" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/MdErgo-client/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.MdErgo-client" />
+      <item itemvalue="Protractor.AppComponent.should create the app" />
+      <item itemvalue="Spring Boot.MdErgoApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Protractor.AppComponent.should create the app" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b4a77f08-c5e8-4764-a5b7-38d11c237a7e" name="Default Changelist" comment="" />
+      <created>1605276613630</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605276613630</updated>
+      <workItem from="1605276621727" duration="2224000" />
+      <workItem from="1605633452841" duration="12777000" />
+      <workItem from="1605768728670" duration="6963000" />
+      <workItem from="1605959209286" duration="13808000" />
+      <workItem from="1606049022311" duration="11625000" />
+      <workItem from="1606071549212" duration="4697000" />
+      <workItem from="1606076329043" duration="2213000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="54307000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2695599" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37290034" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44344905" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.3281075" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32922733" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="SonarLint" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="TypeScript" order="15" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.32922733" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.16687042" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3294621" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26344743" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37290034" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.44344905" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="SonarLint" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="TypeScript" order="15" />
+      <window_info anchor="bottom" id="Messages" order="16" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.16687042" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/MdErgo/heloo.fxml" />
+    <entry file="file://$PROJECT_DIR$/logs/spring-boot-logger.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/tsconfig.app.json" />
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/tsconfig.spec.json" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/MdErgo/db/test.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.changelog-master.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MdErgo/MdErgoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MdErgo/enums/Status.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/MdErgo/base/BaseEntity.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/MdErgo/enums/Gender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MdErgo/person/PersonMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/MdErgo/db/20201121_02_alter_person.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/MdErgo/db/20201121_02_insert_person.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/MdErgo/db/20201121_01_init_person.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MdErgo/person/PersonMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/src/favicon.ico" />
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/angular.json" />
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/src/app/app.component.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/MdErgo/person/PersonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MdErgo/person/PersonRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MdErgo/person/PersonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MdErgo/person/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/src/tsconfig.spec.json" />
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/tsconfig.json" />
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/tslint.json" />
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/src/app/app.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/proxy.conf.json" />
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/src/app/app.module.ts" />
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/src/shared/shared.module.ts" />
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/src/app/app.component.html" />
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/src/app/app.component.ts" />
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/package.json" />
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/.angular-cli.json" />
+    <entry file="file://$PROJECT_DIR$/MdErgo-client/package-lock.json" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>groovy-3.0.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>MDErgo</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="liquibase:update" />
+    <option value="liquibase:generateChangeLog" />
+  </component>
+</project>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+	<changeSet id="20201121_02_insert_person" author="ajargane">
+		<insert tableName="person">
+			<column name="personal_id" value="011187-00000"/>
+			<column name="first_name" value="Agnese"/>
+			<column name="last_name" value="Akmens"/>
+			<column name="gender" value="FEMALE"/>
+			<column name="birth_date" value="01-11-1987"/>
+		</insert>
+
+		<insert tableName="person">
+			<column name="personal_id" value="051180-00000"/>
+			<column name="first_name" value="Kārlis"/>
+			<column name="last_name" value="Sloka"/>
+			<column name="gender" value="MALE"/>
+			<column name="birth_date" value="05-11-1980"/>
+		</insert>
+
+		<insert tableName="person">
+			<column name="personal_id" value="031102-00000"/>
+			<column name="first_name" value="Ieva"/>
+			<column name="last_name" value="Kauls"/>
+			<column name="gender" value="FEMALE"/>
+			<column name="birth_date" value="03-11-2002"/>
+		</insert>
+
+		<insert tableName="person">
+			<column name="personal_id" value="040809-00000"/>
+			<column name="first_name" value="Edgars"/>
+			<column name="last_name" value="Āpsis"/>
+			<column name="gender" value="MALE"/>
+			<column name="birth_date" value="04-08-2009"/>
+		</insert>
+
+		<insert tableName="person">
+			<column name="personal_id" value="190570-00000"/>
+			<column name="first_name" value="Kristīne"/>
+			<column name="last_name" value="Lapa"/>
+			<column name="gender" value="FEMALE"/>
+			<column name="birth_date" value="19-05-1970"/>
+		</insert>
+
+		<insert tableName="person">
+			<column name="personal_id" value="090497-00000"/>
+			<column name="first_name" value="Kaspars"/>
+			<column name="last_name" value="Lietus"/>
+			<column name="gender" value="MALE"/>
+			<column name="birth_date" value="09-04-1997"/>
+		</insert>
+
+		<insert tableName="person">
+			<column name="personal_id" value="090497-00100"/>
+			<column name="first_name" value="Rihards"/>
+			<column name="last_name" value="Akmens"/>
+			<column name="gender" value="MALE"/>
+			<column name="birth_date" value="09-04-1997"/>
+		</insert>
+
+		<insert tableName="person">
+			<column name="personal_id" value="190570-10000"/>
+			<column name="first_name" value="Kate"/>
+			<column name="last_name" value="Akmens"/>
+			<column name="gender" value="FEMALE"/>
+			<column name="birth_date" value="19-05-1970"/>
+		</insert>
+
+
+	</changeSet>
+
+</databaseChangeLog>

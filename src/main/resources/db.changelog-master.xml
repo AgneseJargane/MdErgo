@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+	<!-- Izpilda alfabēta secībā visus changelog'us/changeset'us norādītajā
+		direktorijā. http://www.liquibase.org/documentation/includeall.html Naming
+		convention changeset id un failu nosaukumiem:
+
+		1) datums YYYYMMDD
+		2) 2 ciparu kārtas numurs
+		3) tabulas nosaukums vai apraksts
+		4) autors Svarīgākais - merge
+
+		rezultātā changeset nosaukumi nedrīkst sakrist. -->
+
+	<includeAll path="MdErgo/db" />
+</databaseChangeLog>
